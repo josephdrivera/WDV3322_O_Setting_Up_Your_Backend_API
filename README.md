@@ -13,10 +13,12 @@ Write effective backend API documentation using Swagger UI
 Backend API Requirements
 So we will start this week off by building a backend API that has exactly one endpoint. Simple enough? This one endpoint will accept 4 different POST fields to create/signup a user. These four fields will be as follows: **
 
-email - Email address of the user attempting to signup
+**email - Email address of the user attempting to signup
 phone - Phone number of the user attempting to signup
 birthday - Birthdate of the user attempting to signup
 password - Password of the user attempting to signup
+**
+
 There is no requirement for this user information to be stored in a database. So that really simplifies our project this month. 
 
 The API endpoint route should be located at the URL path "/signup" and the Express application should be running on port 3000 as usual. The response from this API should be in JSON format. It should return all of the user's signup details (with the password masked). Please see the following code for how this endpoint should respond.
@@ -24,7 +26,9 @@ The API endpoint route should be located at the URL path "/signup" and the Expre
 How to test your API
 If all goes well, your backend API should respond properly to the following cURL command in your terminal: 
 
+```javascript
 curl -X POST --data "email=jworkman@fullsail.com&phone=407-555-5555&birthday=12/12/1980&password=asdf1234" http://localhost:3000/signup
+```
 
 If you have setup everything properly you should get the following response from your backend API: 
 
