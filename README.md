@@ -13,11 +13,10 @@ Write effective backend API documentation using Swagger UI
 Backend API Requirements
 So we will start this week off by building a backend API that has exactly one endpoint. Simple enough? This one endpoint will accept 4 different POST fields to create/signup a user. These four fields will be as follows: **
 
-**email - Email address of the user attempting to signup
-phone - Phone number of the user attempting to signup
-birthday - Birthdate of the user attempting to signup
-password - Password of the user attempting to signup
-**
+# **email - Email address of the user attempting to signup
+# **phone - Phone number of the user attempting to signup
+# **birthday - Birthdate of the user attempting to signup
+# **password - Password of the user attempting to signup
 
 There is no requirement for this user information to be stored in a database. So that really simplifies our project this month. 
 
