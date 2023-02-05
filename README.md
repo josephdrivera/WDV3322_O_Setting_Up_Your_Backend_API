@@ -32,3 +32,14 @@ If you have setup everything properly you should get the following response from
 {"message":"User has sucessfully signed up!","user":{"email":"jworkman@fullsail.com","phone":"407-555-5555","birthday":"12/12/1980","password":"●●●●●●●●●●●"}}
 
 ```
+
+```javascript
+const signup = (req, res) => {
+	const { email, phone, birthday, password } = req.body
+	res.json({
+		message: "User has sucessfully signed up!",
+		user: { email, phone, birthday, password: '●●●●●●●●●●●' }
+	})
+}
+module.exports = { signup }
+```
