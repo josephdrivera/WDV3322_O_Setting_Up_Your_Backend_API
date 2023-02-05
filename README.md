@@ -5,13 +5,13 @@
 
 This lesson is not to show you how to code a backend API since you have already been exposed to that in previous course. However this course will learn how to do the following:
 
-Using Express middlewares to validate user input
+# **Using Express middlewares to validate user input
 Exposure to basic regular expressions (RegEx) for validation purposes
 How to modularize your code by making your own NPM packages/libraries
 How to write code/unit tests for NodeJS/Express applications using Jest (Javascript testing framework)
 Write effective backend API documentation using Swagger UI
 Backend API Requirements
-So we will start this week off by building a backend API that has exactly one endpoint. Simple enough? This one endpoint will accept 4 different POST fields to create/signup a user. These four fields will be as follows: 
+So we will start this week off by building a backend API that has exactly one endpoint. Simple enough? This one endpoint will accept 4 different POST fields to create/signup a user. These four fields will be as follows: **
 
 email - Email address of the user attempting to signup
 phone - Phone number of the user attempting to signup
@@ -28,4 +28,7 @@ curl -X POST --data "email=jworkman@fullsail.com&phone=407-555-5555&birthday=12/
 
 If you have setup everything properly you should get the following response from your backend API: 
 
+```javascript
 {"message":"User has sucessfully signed up!","user":{"email":"jworkman@fullsail.com","phone":"407-555-5555","birthday":"12/12/1980","password":"●●●●●●●●●●●"}}
+
+```
