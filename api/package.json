@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,9 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@josephdrivera/test": "^1.0.0",
+    "axios": "^1.3.3",
+    "jest": "^29.4.3",
     "nodemon": "^2.0.20"
   }
 }
